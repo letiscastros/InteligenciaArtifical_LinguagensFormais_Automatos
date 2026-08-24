@@ -1,0 +1,17 @@
+Bloco 1 — Derivação
+
+A) 𝑆 ⇒ 𝑎𝑆 ⇒ 𝑎𝑎𝑆 ⇒ 𝑎𝑎𝑎𝑆 ⇒ 𝑎𝑎𝑎𝑏
+
+B) Eu sei que a derivação terminou porque não tem mais nenhum símbolo não terminal, como o 𝑆. No final, ficou somente a palavra formada por símbolos terminais: aaab.
+
+Bloco 2 — GLC
+
+A) 𝑆 ⇒ 𝑎𝑆𝑏 ⇒ 𝑎𝑎𝑆𝑏𝑏 ⇒ 𝑎𝑎𝑎𝑆𝑏𝑏𝑏 ⇒ 𝑎𝑎𝑎𝑏𝑏𝑏
+
+B) Não é possível gerar aabbb, porque nessa gramática sempre é colocado um a e um b ao mesmo tempo. Então, a quantidade de 𝑎's e 𝑏's precisa ser igual. Como aabbb tem 2 𝑎's e 3 𝑏's, não pode ser gerada.
+
+Bloco 3 — Classificação
+
+A gramática é Regular, porque as regras são do tipo permitido para uma gramática regular: 𝑆 → 𝑎𝐴 e 𝐴 → 𝑏.
+
+Portanto, a resposta é: Regular.
