@@ -1,0 +1,23 @@
+Bloco 1 (Derivação) — G1: S → aS | b
+
+A) Gerando a palavra aaab:
+
+S ⇒ aS ⇒ aaS ⇒ aaaS ⇒ aaab
+
+Em cada passo eu troquei o S por "aS" (aplicando a primeira regra), até que na última troca usei a regra "S → b" pra fechar a palavra.
+
+B) Eu sei que a derivação terminou quando não sobra mais nenhum símbolo não-terminal (nesse caso, o S) na palavra — só restam terminais (a's e b). Como não tem mais S pra substituir, não dá mais pra aplicar nenhuma regra, então a derivação parou ali.
+
+Bloco 2 (GLC) — G2: S → aSb | ε
+
+A) Gerando a palavra aaabbb:
+
+S ⇒ aSb ⇒ aaSbb ⇒ aaaSbbb ⇒ aaabbb
+
+Aqui apliquei a regra "S → aSb" três vezes seguidas (por isso ficou com 3 a's e 3 b's), e no final troquei o último S por ε (vazio), fechando a palavra.
+
+B) Não é possível gerar aabbb. Essa gramática sempre gera palavras da forma aⁿbⁿ, ou seja, sempre com a mesma quantidade de a's e b's, porque toda vez que a regra "S → aSb" é aplicada, ela acrescenta um "a" e um "b" ao mesmo tempo, dos dois lados. A palavra aabbb tem 2 a's e 3 b's, quantidades diferentes, então não tem como essa gramática gerar essa palavra.
+
+Bloco 3 (Classificação) — S → aA | A → b
+
+Essa gramática só consegue gerar uma única palavra: "ab" (S → aA → ab). Como não tem nenhuma recursão (nenhuma regra chama o S de novo), a linguagem gerada é bem simples e finita, e toda gramática regular pode ser escrita nesse formato de "um terminal seguido de um não-terminal". Por isso, essa gramática é classificada como Regular.
