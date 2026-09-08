@@ -3,11 +3,11 @@ Considere: Σ = a,b,c
 
 Responda:
 
-Quantos símbolos existem no alfabeto? 3
-Quais são os símbolos? a, b e c
-O símbolo a pertence ao alfabeto? sim
-O símbolo d pertence ao alfabeto? não
-Escreva uma palavra formada por símbolos desse alfabeto. baba
+1) Quantos símbolos existem no alfabeto? 3
+2) Quais são os símbolos? a, b e c
+3) O símbolo a pertence ao alfabeto? sim
+4) O símbolo d pertence ao alfabeto? não
+5) Escreva uma palavra formada por símbolos desse alfabeto. baba
 
 # 2 Palavras sobre um alfabeto
 
