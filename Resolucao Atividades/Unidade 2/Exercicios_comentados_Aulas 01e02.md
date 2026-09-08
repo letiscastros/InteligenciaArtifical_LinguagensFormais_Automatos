@@ -9,7 +9,7 @@ Responda:
 2) Quais são os símbolos? a, b e c
 3) O símbolo a pertence ao alfabeto? sim
 4) O símbolo d pertence ao alfabeto? não
-5) Escreva uma palavra formada por símbolos desse alfabeto. baba
+5) Escreva uma palavra formada por símbolos desse alfabeto. ab
 
 # 2. Palavras sobre um alfabeto
 
