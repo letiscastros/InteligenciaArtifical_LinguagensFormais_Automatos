@@ -1,0 +1,60 @@
+# 1 Alfabeto
+Considere: Σ = a,b,c
+
+Responda:
+
+Quantos símbolos existem no alfabeto? 3
+Quais são os símbolos? a, b e c
+O símbolo a pertence ao alfabeto? sim
+O símbolo d pertence ao alfabeto? não
+Escreva uma palavra formada por símbolos desse alfabeto. baba
+
+# 2 Palavras sobre um alfabeto
+
+Considere: Σ = 0,1
+
+Classifique cada sequência como palavra válida ou não válida:
+
+| Sequência | Válida? | Justificativa |
+|---|---|---|
+| `0101` |Sim|ambos pertencem ao alfabeto|
+| `00110` |Sim|ambos pertencem ao alfabeto|
+| `012` |Não|2 não pertence ao alfabeto|
+| `111` |Sim| 1 pertence ao alfabeto|
+| `10a` |Não| "a" não pertence ao alfabeto |
+
+# 3 Pertinência de símbolos e palavras
+
+Considere: Σ = 0,1
+
+Determine se as afirmações são verdadeiras ou falsas:
+
+1) 0 ∈ Σ - Verdadeiro, 0 existe no alfabeto.
+2) 1 ∈ Σ - Verdadeiro, 1 existe no alfabeto.
+3) 01 ∈ Σ - Falso, 0 e 1 existem no alfabeto mas 01 pertence ao conjunto de todas as palavras sobre Sigma.
+4) 01 ∈ Σ∗ - Verdadeiro, 01 pertence ao conjunto de todas as palavras sobre Sigma.
+5) 2 ∈ Σ - Falso, 2 não existe no alfabeto.
+6) 101 ∈ Σ∗ - Verdadeiro, 101 pertence ao conjunto de todas as palavras sobre Sigma.
+Justifique cada resposta.
+
+# 4 Linguagem
+
+Considere: L = 0, 01, 011, 0111
+
+Determine se cada palavra pertence à linguagem:
+
+1) 0 ∈ L - 0 pertence à linguagem.
+2) 01 ∈ L - 01 pertence à linguagem.
+3) 0111 ∈ L - 0111 pertence à linguagem.
+4) 10 ∈ L - 10 não pertence à linguagem.
+5) 111 ∈ L - 111 não pertence à linguagem.
+6) 011 ∈ L - 011 pertence à linguagem.
+
+# 5 Descrevendo uma linguagem por padrão
+
+Considere: L = b^n ∣ n ≥ 1
+
+1) Escreva as cinco primeiras palavras: b, bb, bbb, bbbb, bbbbb
+2) Explique o significado de b^n: Significa a letra "b" repetida n vezes seguidas. Por exemplo, se n=3, então b³ = bbb.
+3) A palavra bbbbbb pertence à linguagem? Sim. Ela tem 6 letras "b" (n=6), e como n=6 é maior ou igual a 1, ela satisfaz a condição da linguagem.
+4) A palavra vazia (ε) pertence à linguagem? Não. A definição exige n ≥ 1, ou seja, pelo menos uma letra "b". Como a palavra vazia tem zero letras (n=0), ela fica de fora dessa linguagem.
