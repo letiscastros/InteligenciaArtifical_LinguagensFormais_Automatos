@@ -1,4 +1,4 @@
-# 1 Alfabeto
+# 1 | Alfabeto
 Considere: Σ = a,b,c
 
 Responda:
@@ -9,7 +9,7 @@ Responda:
 4) O símbolo d pertence ao alfabeto? não
 5) Escreva uma palavra formada por símbolos desse alfabeto. baba
 
-# 2 Palavras sobre um alfabeto
+# 2 | Palavras sobre um alfabeto
 
 Considere: Σ = 0,1
 
@@ -23,7 +23,7 @@ Classifique cada sequência como palavra válida ou não válida:
 | `111` |Sim| 1 pertence ao alfabeto|
 | `10a` |Não| "a" não pertence ao alfabeto |
 
-# 3 Pertinência de símbolos e palavras
+# 3 | Pertinência de símbolos e palavras
 
 Considere: Σ = 0,1
 
@@ -37,7 +37,7 @@ Determine se as afirmações são verdadeiras ou falsas:
 6) 101 ∈ Σ∗ - Verdadeiro, 101 pertence ao conjunto de todas as palavras sobre Sigma.
 Justifique cada resposta.
 
-# 4 Linguagem
+# 4 | Linguagem
 
 Considere: L = 0, 01, 011, 0111
 
@@ -50,7 +50,7 @@ Determine se cada palavra pertence à linguagem:
 5) 111 ∈ L - 111 não pertence à linguagem.
 6) 011 ∈ L - 011 pertence à linguagem.
 
-# 5 Descrevendo uma linguagem por padrão
+# 5 | Descrevendo uma linguagem por padrão
 
 Considere: L = b^n ∣ n ≥ 1
 
