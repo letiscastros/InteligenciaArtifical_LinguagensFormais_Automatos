@@ -94,11 +94,11 @@ P = S → 0A, A → 1
 
 Identifique:
 
-1) O conjunto de variáveis.
-2) O conjunto de terminais.
-3) O conjunto de produções.
-4) O símbolo inicial.
-5) Qual palavra pode ser gerada por essa gramática?
+1) O conjunto de variáveis. V = S, A
+2) O conjunto de terminais. T = 0, 1
+3) O conjunto de produções. P = S → 0A, A → 1 
+4) O símbolo inicial. S
+5) Qual palavra pode ser gerada por essa gramática? 01
 
 # 8. Como ler e aplicar uma produção
 
@@ -108,10 +108,10 @@ S → 0S
 
 Começando com S:
 
-1) Aplique a regra uma vez:
-2) Aplique a regra duas vezes:
-3) Aplique a regra três vezes:
-4) Escreva a sequência completa de derivação:
+1) Aplique a regra uma vez: S → 0S 
+2) Aplique a regra duas vezes: S ⇒ 0S ⇒ 00S
+3) Aplique a regra três vezes: S ⇒ 0S ⇒ 00S ⇒ 000S
+4) Escreva a sequência completa de derivação: 000S
 
 # 9. Derivação completa de uma palavra
 
