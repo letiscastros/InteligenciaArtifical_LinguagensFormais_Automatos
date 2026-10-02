@@ -78,9 +78,9 @@ B) L = ε
 
 Depois responda:
 
-Qual delas possui uma palavra? B, a palavra vazia representa uma palavra de comprimento 0.
-Qual delas não possui nenhuma palavra? A, pois refere-se à um conjunto sem elementos, não possuindo nenhuma palavra.
-Qual é o comprimento da palavra  ε? 0
+1) Qual delas possui uma palavra? B, a palavra vazia representa uma palavra de comprimento 0.
+2) Qual delas não possui nenhuma palavra? A, pois refere-se à um conjunto sem elementos, não possuindo nenhuma palavra.
+3) Qual é o comprimento da palavra  ε? 0
 
 # 7. Estrutura de uma gramática
 
