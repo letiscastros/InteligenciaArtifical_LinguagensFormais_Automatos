@@ -16,11 +16,10 @@ dos arquivos, bloqueio em tempo real no servidor de e-mail e logs de rede extern
 3. No menu superior, clique em **Ambiente de execução > Executar tudo**.
 
 ## Opção 2: Ambiente local
-```bash
 pip install -r requirements.txt
 jupyter notebook datashare_se.ipynb
 
-## Arquivos
+### Arquivos
 - `datashare_se.ipynb`: notebook completo (autocontido, com treinamento, matriz de confusão, motor de inferência e análise ética).
 - `dados/dataset_compartilhamento.csv`: base com 150 casos históricos de solicitações de compartilhamento (`baixo`, `moderado`, `alto`).
 - `dados/regras_seguranca.csv`: base de conhecimento com as 5 regras de produção (`R1` a `R5`), condições e justificativas.
@@ -28,7 +27,7 @@ jupyter notebook datashare_se.ipynb
 - `tests/rotulos_ouro.csv`: gabarito esperado (`regra_esperada` e `acao_esperada`) para conferência automática.
 - `Ética e impactos da IA - DataShare-SE.pdf`: avaliação ética completa, dilema prático, referências e declaração de uso de IA.
 
-## Regras de decisão (Base de Conhecimento)
+### Regras de decisão (Base de Conhecimento)
 - **R1:** `SE` `nivel_sensibilidade == 4` (restrito) `E` `pct_externos > 0`, `ENTÃO` bloquear compartilhamento.
 - **R2:** `SE` `risco == 'alto'` `E` `autenticacao_forte == False`, `ENTÃO` bloquear e exigir MFA.
 - **R3:** `SE` `risco == 'alto'` `E` `autenticacao_forte == True`, `ENTÃO` revisar permissões e aprovar com prazo.
