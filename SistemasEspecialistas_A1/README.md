@@ -9,9 +9,16 @@ Sistema especialista com aprendizado supervisionado (Árvore de Decisão + regra
 dos arquivos, bloqueio em tempo real no servidor de e-mail e logs de rede externa.
 
 ## Como rodar
-    pip install -r requirements.txt
-    jupyter notebook datashare_se.ipynb
-Rode o notebook a partir desta pasta (ele lê `dados/` e `tests/` por caminho relativo e também é autocontido no Google Colab).
+
+### Opção 1: Google Colab (recomendado)
+1. Acesse o [Google Colab](https://colab.research.google.com/drive/1O552mT0AqMniH4_vJPCGvVXX8j4glpBp?usp=sharing)
+2. Clique em **Arquivo > Abrir notebook > GitHub** e cole o link deste repositório (ou abra o arquivo `datashare_se.ipynb` diretamente).
+3. No menu superior, clique em **Ambiente de execução > Executar tudo**.
+
+### Opção 2: Ambiente local
+```bash
+pip install -r requirements.txt
+jupyter notebook datashare_se.ipynb
 
 ## Arquivos
 - `datashare_se.ipynb`: notebook completo (autocontido, com treinamento, matriz de confusão, motor de inferência e análise ética).
