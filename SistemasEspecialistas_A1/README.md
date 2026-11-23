@@ -1,10 +1,10 @@
-# DataShare-SE: classificador de risco e controle de acesso no compartilhamento de arquivos
+# DataShare-SE: Classificador de risco e controle de acesso no compartilhamento de arquivos
 
 Sistema especialista com aprendizado supervisionado (Árvore de Decisão + regras SE…ENTÃO) para as classes
 `baixo`, `moderado` e `alto` risco em solicitações de compartilhamento corporativo.
 
 **Fonte única de políticas e controles de segurança:** Boas práticas de governança e proteção de dados baseadas na
-*Lei Geral de Proteção de Dados Pessoais* (Lei nº 13.709/2018 — LGPD) e na norma *ABNT NBR ISO/IEC 27001:2022*
+*Lei Geral de Proteção de Dados Pessoais* (Lei nº 13.709/2018 - LGPD) e na norma *ABNT NBR ISO/IEC 27001:2022*
 (controles de transferência de informações e autenticação multifator). Fora do escopo: inspeção de conteúdo/OCR
 dos arquivos, bloqueio em tempo real no servidor de e-mail e logs de rede externa.
 
@@ -47,7 +47,12 @@ sintéticos (princípio da minimização de dados) e casos de alto risco com MFA
 pela equipe de Segurança da Informação / TI.
 
 ## Autoria
-- **Aluna:** Letícia Castro de Souza e Lucas Eduardo Barreto de Oliveira
+- **Aluno 1:** Letícia Castro de Souza
+- **RGM:** 38214245
+
+- **Aluno 2:** Lucas Eduardo Barreto de Oliveira
+- **RGM:** 42751969
+
 - **Disciplina:** Inteligência Artificial, Linguagens Formais e Autômatos - UDF
 - **Professora:** Profa. Kadidja Valéria
 
