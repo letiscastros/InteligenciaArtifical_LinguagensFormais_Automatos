@@ -50,3 +50,6 @@ pela equipe de Segurança da Informação / TI.
 - **Aluna:** Letícia Castro de Souza e Lucas Eduardo Barreto de Oliveira
 - **Disciplina:** Inteligência Artificial, Linguagens Formais e Autômatos - UDF
 - **Professora:** Profa. Kadidja Valéria
+
+## Licença
+Este projeto está licenciado sob a **Licença MIT**, conforme especificado no arquivo `LICENSE` na raiz deste repositório.
