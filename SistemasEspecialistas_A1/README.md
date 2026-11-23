@@ -24,7 +24,7 @@ jupyter notebook datashare_se.ipynb
 - `dados/dataset_risco_compartilhamento.csv`: base com 150 casos históricos de solicitações de compartilhamento (`baixo`, `moderado`, `alto`).
 - `dados/regras_seguranca.csv`: base de conhecimento com as 5 regras de produção (`R1` a `R5`), condições e justificativas.
 - `tests/casos_teste.csv`: 5 cenários sintéticos para validar o disparo das regras.
-- `tests/rotulos_ouro.csv`: gabarito esperado (`regra_esperada` e `acao_esperada`) para conferência automática.
+- `tests/resultados_esperados.csv`: gabarito esperado (`regra_esperada` e `acao_esperada`) para conferência automática.
 - `Ética e impactos da IA - DataShare-SE.pdf`: avaliação ética completa, dilema prático, referências e declaração de uso de IA.
 
 ### Regras de decisão (Base de Conhecimento)
