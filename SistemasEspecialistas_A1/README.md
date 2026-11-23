@@ -48,5 +48,5 @@ pela equipe de Segurança da Informação / TI.
 
 ## Autoria
 - **Aluna:** Letícia Castro de Souza e Lucas Eduardo Barreto de Oliveira
-- **Disciplina:** Inteligência Artificial, Linguagens Formais e Autômatos — UDF
+- **Disciplina:** Inteligência Artificial, Linguagens Formais e Autômatos - UDF
 - **Professora:** Profa. Kadidja Valéria
