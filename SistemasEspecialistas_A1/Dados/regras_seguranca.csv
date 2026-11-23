@@ -1,0 +1,6 @@
+regra,condicao,acao,justificativa
+R1,nivel_sensibilidade == 4 E pct_externos > 0,Bloquear compartilhamento,Arquivo restrito não pode ser enviado a destinatários externos.
+R2,risco == alto E autenticacao_forte == False,Bloquear e exigir MFA,Risco alto sem autenticação multifator representa ameaça crítica.
+R3,risco == alto E autenticacao_forte == True,Revisar permissões e aprovar com prazo,Risco alto mitigado por MFA exige validação de privilégio mínimo.
+R4,risco == moderado E autenticacao_forte == False,Solicitar MFA antes de liberar,Risco moderado requer verificação adicional de identidade.
+R5,risco == baixo OU (risco == moderado E autenticacao_forte == True),Liberar compartilhamento,Parâmetros dentro da política de segurança corporativa.
