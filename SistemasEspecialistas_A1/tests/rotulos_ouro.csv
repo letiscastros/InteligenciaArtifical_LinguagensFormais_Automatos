@@ -1,0 +1,6 @@
+id_caso,regra_esperada,acao_esperada
+c01,R1,Bloquear compartilhamento
+c02,R2,Bloquear e exigir MFA
+c03,R3,Revisar permissões e aprovar com prazo
+c04,R4,Solicitar MFA antes de liberar
+c05,R5,Liberar compartilhamento
