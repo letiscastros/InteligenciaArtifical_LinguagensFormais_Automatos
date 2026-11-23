@@ -21,7 +21,7 @@ jupyter notebook datashare_se.ipynb
 
 ### Arquivos
 - `datashare_se.ipynb`: notebook completo (autocontido, com treinamento, matriz de confusão, motor de inferência e análise ética).
-- `dados/dataset_compartilhamento.csv`: base com 150 casos históricos de solicitações de compartilhamento (`baixo`, `moderado`, `alto`).
+- `dados/dataset_risco_compartilhamento.csv`: base com 150 casos históricos de solicitações de compartilhamento (`baixo`, `moderado`, `alto`).
 - `dados/regras_seguranca.csv`: base de conhecimento com as 5 regras de produção (`R1` a `R5`), condições e justificativas.
 - `tests/casos_teste.csv`: 5 cenários sintéticos para validar o disparo das regras.
 - `tests/rotulos_ouro.csv`: gabarito esperado (`regra_esperada` e `acao_esperada`) para conferência automática.
