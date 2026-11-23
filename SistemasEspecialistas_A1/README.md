@@ -10,12 +10,12 @@ dos arquivos, bloqueio em tempo real no servidor de e-mail e logs de rede extern
 
 ## Como rodar
 
-### Opção 1: Google Colab (recomendado)
+## Opção 1: Google Colab (recomendado)
 1. Acesse o [Google Colab](https://colab.research.google.com/drive/1O552mT0AqMniH4_vJPCGvVXX8j4glpBp?usp=sharing)
 2. Clique em **Arquivo > Abrir notebook > GitHub** e cole o link deste repositório (ou abra o arquivo `datashare_se.ipynb` diretamente).
 3. No menu superior, clique em **Ambiente de execução > Executar tudo**.
 
-### Opção 2: Ambiente local
+## Opção 2: Ambiente local
 ```bash
 pip install -r requirements.txt
 jupyter notebook datashare_se.ipynb
