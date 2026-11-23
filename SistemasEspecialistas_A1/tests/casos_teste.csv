@@ -1,0 +1,6 @@
+id_caso,nivel_sensibilidade,nivel_permissao,qtd_destinatarios,pct_externos,autenticacao_forte
+c01,4,2,1,100,True
+c02,3,3,15,80,False
+c03,3,2,10,60,True
+c04,2,2,5,40,False
+c05,1,1,2,0,True
