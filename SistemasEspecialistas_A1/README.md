@@ -1,0 +1,46 @@
+# DataShare-SE: classificador de risco e controle de acesso no compartilhamento de arquivos
+
+Sistema especialista com aprendizado supervisionado (Árvore de Decisão + regras SE…ENTÃO) para as classes
+`baixo`, `moderado` e `alto` risco em solicitações de compartilhamento corporativo.
+
+**Fonte única de políticas e controles de segurança:** Boas práticas de governança e proteção de dados baseadas na
+*Lei Geral de Proteção de Dados Pessoais* (Lei nº 13.709/2018 — LGPD) e na norma *ABNT NBR ISO/IEC 27001:2022*
+(controles de transferência de informações e autenticação multifator). Fora do escopo: inspeção de conteúdo/OCR
+dos arquivos, bloqueio em tempo real no servidor de e-mail e logs de rede externa.
+
+## Como rodar
+    pip install -r requirements.txt
+    jupyter notebook datashare_se.ipynb
+Rode o notebook a partir desta pasta (ele lê `dados/` e `tests/` por caminho relativo e também é autocontido no Google Colab).
+
+## Arquivos
+- `datashare_se.ipynb`: notebook completo (autocontido, com treinamento, matriz de confusão, motor de inferência e análise ética).
+- `dados/dataset_compartilhamento.csv`: base com 150 casos históricos de solicitações de compartilhamento (`baixo`, `moderado`, `alto`).
+- `dados/regras_seguranca.csv`: base de conhecimento com as 5 regras de produção (`R1` a `R5`), condições e justificativas.
+- `tests/casos_teste.csv`: 5 cenários sintéticos para validar o disparo das regras.
+- `tests/rotulos_ouro.csv`: gabarito esperado (`regra_esperada` e `acao_esperada`) para conferência automática.
+- `Ética e impactos da IA - DataShare-SE.pdf`: avaliação ética completa, dilema prático, referências e declaração de uso de IA.
+
+## Regras de decisão (Base de Conhecimento)
+- **R1:** `SE` `nivel_sensibilidade == 4` (restrito) `E` `pct_externos > 0`, `ENTÃO` bloquear compartilhamento.
+- **R2:** `SE` `risco == 'alto'` `E` `autenticacao_forte == False`, `ENTÃO` bloquear e exigir MFA.
+- **R3:** `SE` `risco == 'alto'` `E` `autenticacao_forte == True`, `ENTÃO` revisar permissões e aprovar com prazo.
+- **R4:** `SE` `risco == 'moderado'` `E` `autenticacao_forte == False`, `ENTÃO` solicitar MFA antes de liberar.
+- **R5:** `SE` `risco == 'baixo'` `OU` (`risco == 'moderado'` `E` `autenticacao_forte == True`), `ENTÃO` liberar compartilhamento.
+
+## Conferência e validação
+Os 5 cenários de `tests/casos_teste.csv` foram conferidos contra `tests/rotulos_ouro.csv`, validando 100% do
+encadeamento para frente (`R1` a `R5`). O modelo de Árvore de Decisão obteve **76,3% de acurácia** na classificação
+do risco inerente antes da aplicação das regras de segurança, registrando os passos da decisão (*"Como?"* e *"Por quê?"*).
+
+## Limitações conhecidas
+O sistema avalia apenas os metadados declarados na solicitação (`nivel_sensibilidade`, `nivel_permissao`,
+`qtd_destinatarios`, `pct_externos` e `autenticacao_forte`). Se um arquivo confidencial for classificado
+incorretamente como público pelo usuário, a regra `R1` não será disparada. Os 150 casos de treinamento são
+sintéticos (princípio da minimização de dados) e casos de alto risco com MFA ativo (`R3`) exigem revisão humana
+pela equipe de Segurança da Informação / TI.
+
+## Autoria
+- **Aluna:** Letícia Castro de Souza e Lucas Eduardo Barreto de Oliveira
+- **Disciplina:** Inteligência Artificial, Linguagens Formais e Autômatos — UDF
+- **Professora:** Profa. Kadidja Valéria
